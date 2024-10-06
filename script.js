@@ -13,5 +13,5 @@ document.querySelector('#yourForm').addEventListener('submit', async (e) => {
     });
 
     const result = await response.json();
-    alert(result.message);  // Show the success message
+    console.log(result.message);  // Show the success message
 });
