@@ -347,17 +347,17 @@
 				// Check if the form submission was successful
 				if (response.ok) {
 					// Show a success popup
-					alert('Form submitted successfully! Data saved in the database.');
+					console.log('Form submitted successfully! Data saved in the database.');
 
 					// Optionally, clear the form fields
 					document.getElementById('contactForm').reset();
 				} else {
 					// Show an error if something went wrong
-					alert('There was an error submitting the form. Please try again.');
+					console.log('There was an error submitting the form. Please try again.');
 				}
 			} catch (error) {
 				console.error('Error:', error);
-				alert('An error occurred. Please check your connection or contact support.');
+				console.log('An error occurred. Please check your connection or contact support.');
 			}
 		});
 	</script>
